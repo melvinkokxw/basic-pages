@@ -3,9 +3,45 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/master.css" type="text/css">
-    <title></title>
+    <title>Product Landing Page</title>
   </head>
   <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+    <header id="header">
+      <img src="https://hsi-illustration.com/gallery_gen/9d926ee06039a6a08224a692f3e483aa_433x78.png" alt="company logo" id="header-img">
+      <nav id="nav-bar">
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#options" class="nav-link">Options</a>
+        <a href="#form" class="nav-link">Quotation</a>
+      </nav>
+    </header>
+
+    <video src="./resources/video.mp4" poster="./resources/posterimage.jpg" id="video" class="content" controls>
+
+    </video>
+
+    <div class="content" id="options">
+      <section id="full-body" class="product-option">
+        <img src="https://hsi-illustration.com/gallery_gen/1950915f4814bf68889ae616cd56acfb_430x431.jpg" alt="sample image of full-body portrait option">
+        <h2>Full-body portrait</h2>
+        <p>emphasis on overall atmosphere and less facial details, for a more minimalistic and elegant look</p>
+      </section>
+      <section id="half-body" class="product-option">
+        <img src="https://hsi-illustration.com/gallery_gen/c76902c991c0690a98220091eab7605e_431x431.jpg" alt="sample image of half-body portrait option">
+        <h2>Half-body portrait</h2>
+        <p>paying close attention to facial features to make the individuals more recognizable with a personal touch</p>
+      </section>
+    </div>
+
+    <form class="" action="https://www.freecodecamp.com/email-submit" method="post" id="form" class="content">
+      <p>Enter your email for Hsi to get in contact with you!</p>
+      <input type="email" name="email" placeholder="Enter your email here" id="email">
+      <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
