@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="./css/master.css" type="text/css">
+    <title>Survey Form</title>
   </head>
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -10,29 +11,38 @@
       <h1 id="title">Feedback Form for Hall Residents</h1>
       <p id="description">Thank you for taking the time to help us improve the hall</p>
     </header>
-    <form class="" action="index.html" method="post" id="survey-form">
+    <form class="container" action="index.html" method="post" id="survey-form">
 
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+      </div>
 
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" name="email" id="email" placeholder="Enter your NTU email address" pattern=".+@e.ntu.edu.sg" required>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" name="email" id="email"  placeholder="Enter your NTU email address" pattern=".+@e.ntu.edu.sg" required>
+      </div>
 
-      <label for="number" id="number-label">Year of Study: (Optional)</label>
-      <input type="number" name="year" id="number" min="1" max="6" placeholder="Enter your year of study (optional)">
+      <div class="form-group">
+        <label for="number" id="number-label">Year of Study (Optional):</label>
+        <input type="number" name="year" id="number"  min="1" max="6" placeholder="Enter your year of study (optional)">
+      </div>
 
-      <label for="dropdown"></label>
-      <select class="dropdown" name="block" id="dropdown">
-        <option value="12">Block 12</option>
-        <option value="13">Block 13</option>
-        <option value="14">Block 14</option>
-        <option value="15">Block 15</option>
-        <option value="16">Block 16</option>
-        <option value="17">Block 17</option>
-        <option value="18">Block 18</option>
-      </select>
+      <div class="form-group">
+        <label for="dropdown">Which block do you reside in:</label><br>
+        <select class="dropdown" name="block" id="dropdown" >
+          <option value="12">Block 12</option>
+          <option value="13">Block 13</option>
+          <option value="14">Block 14</option>
+          <option value="15">Block 15</option>
+          <option value="16">Block 16</option>
+          <option value="17">Block 17</option>
+          <option value="18">Block 18</option>
+        </select>
+      </div>
 
-      <fieldset id="satisfaction">
+
+      <fieldset id="satisfaction" class="form-group">
         <legend>How satisfied are you with your stay in Hall 1?</legend>
         <input type="radio" name="satisfaction" value="high" id="high">
         <label for="high">Very satisfied</label>
@@ -42,7 +52,7 @@
         <label for="low">Not satisfied</label>
       </fieldset>
 
-      <fieldset id="positives">
+      <fieldset id="positives" class="form-group">
         <legend>What did you like about Hall 1?</legend>
         <input type="checkbox" name="positives" value="council" id="council">
         <label for="council">The Hall Council</label>
@@ -52,8 +62,10 @@
         <label for="room">My Room</label>
       </fieldset>
 
-      <label for="etc">Any other feedback or comments?</label>
-      <textarea name="name" rows="8" cols="80" id="etc"></textarea>
+      <div class="form-group">
+        <label for="etc">Any other feedback or comments?</label>
+        <textarea name="name" rows="8" cols="80" id="etc" ></textarea>
+      </div>
 
       <button type="submit" name="button" id="submit">Submit</button>
     </form>
