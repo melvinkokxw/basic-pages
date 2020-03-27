@@ -34,3 +34,10 @@ This webpage is intended to be a landing page to show details about a company's 
     * This was used in this web page to contain the two product images and their descriptions.
     * A flexbox was initially used due to a lack of understanding that a flexbox is meant for one-directional layouts. In this case since there are both columns and rows to consider, a grid is more appropriate.
 * Special note: Although scaling of the product images to fit the screen was achieved, it would be better to let the column of product overflow on a smaller screen to allow better view of the image since it is more important than the text in this context.
+
+## Learning Resources
+From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css), specifically freeCodeCamp's [lesson materials](https://www.freecodecamp.org/learn/).
+
+Product landing page modelled after (and intended for delivering to) an actual business, [hsi-illustration](hsi-illustration.com).
+
+Color schemes chosen from [Color Supply](https://colorsupplyyy.com).
