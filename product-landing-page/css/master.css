@@ -2,6 +2,7 @@
   --color1: #F7E3DA;
   --color2: #E2A39C;
   --color3: #D96767;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (max-width:400px) {
@@ -10,14 +11,20 @@
   }
 }
 
+@media only screen and (min-width:400px) {
+  body {
+    font-size: 15px;
+  }
+}
+
 body {
   background-color: var(--color1);
 }
 
 header {
-  background-color: var(--color2);
+  background-color: white;
   width: 100%;
-  height: 100px;
+  height: 80px;
   top: 0;
   left: 0;
   position: fixed;
@@ -26,13 +33,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   z-index: 100;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 #header-img {
   width: 50%;
   height: auto;
-  max-height: 100px;
+  max-height: 100%;
 }
 
 nav>ul {
@@ -44,13 +51,10 @@ nav>ul {
   flex-wrap: nowrap;
 }
 
-nav>ul>li {
+.nav-link {
   margin: 10px;
   padding: 0;
-}
-
-.nav-link {
-
+  color: var(--color3);
 }
 
 #message {
@@ -61,4 +65,25 @@ nav>ul>li {
   display: block;
   margin: 20px auto;
   text-align: center;
+  width: 70%;
 }
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+ #options {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: 45% 45%;
+   grid-template-rows: auto auto auto;
+   grid-column-gap: 10%;
+   text-align: center;
+ }
+
+ .product-img {
+   width: 100%;
+   height: auto;
+ }
