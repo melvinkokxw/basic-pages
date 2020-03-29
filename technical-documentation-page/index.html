@@ -8,92 +8,106 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+    <nav id="navbar">
+      <header>
+        <h1>CSS Documentation</h1>
+      </header>
+        <ul id="nav-list">
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#Basics" class="nav-link">Basics</a></li>
+          <li><a href="#Selectors" class="nav-link">Selectors</a></li>
+          <li><a href="#Color" class="nav-link">Color</a></li>
+          <li><a href="#Fonts" class="nav-link">Fonts</a></li>
+          <li><a href="#Acknowledgements" class="nav-link">Acknowledgements</a></li>
+        </ul>
+    </nav>
+
     <main id="main-doc">
-      <nav id="nav-bar">
-        <header>
-          <h1>CSS Documentation</h1>
-          <ul>
-            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#Basics" class="nav-link">Basics</a></li>
-            <li><a href="#Selectors" class="nav-link">Selectors</a></li>
-            <li><a href="#Color" class="nav-link">Color</a></li>
-            <li><a href="#Fonts" class="nav-link">Fonts</a></li>
-          </ul>
-        </header>
-      </nav>
       <section class="main-section" id="Introduction">
         <header>
           <h2>Introduction</h2>
         </header>
-        <p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.</p>
-        <p>There are three main ways to apply CSS styling.</p>
-        <ul>
-          <li>You can apply inline styles directly to HTML elements with the <code>style</code> attribute. </li>
-          <li>Alternatively, you can place CSS rules within style tags in an HTML document. </li>
-          <li>Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. </li>
-        </ul>
-        <p>Even though the first two options have their use cases, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.</p>
-      </section>
+        <article class="content">
+          <p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.</p>
+          <p>There are three main ways to apply CSS styling.</p>
+          <ul>
+            <li>You can apply inline styles directly to HTML elements with the <code>style</code> attribute. </li>
+            <li>Alternatively, you can place CSS rules within style tags in an HTML document. </li>
+            <li>Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. </li>
+          </ul>
+          <p>Even though the first two options have their use cases, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code.</p>
+        </article>
+        </section>
 
       <section class="main-section" id="Basics">
         <header>
           <h2>Basics</h2>
         </header>
-        <p>A basic snippet of code from CSS looks like this:</p>
-        <code>
-          <span>selector {<br></span>
-          <span class="tab">property1: value1;</span><br>
-          <span class="tab">property2: value2;</span><br>
-          <span>}</span>
-        </code>
-        <p>Where <code>selector</code> determines what elements the style is applied to, <code>property</code> determines what properties of the elements are being modified, and <code>value</code> determines what the property is modified into.</p>
-      </section>
+        <article class="content">
+          <p>A basic snippet of code from CSS looks like this:</p>
+          <code>
+            <span>selector {<br></span>
+            <span class="tab">property1: value1;</span><br>
+            <span class="tab">property2: value2;</span><br>
+            <span>}</span>
+          </code>
+          <p>Where <code>selector</code> determines what elements the style is applied to, <code>property</code> determines what properties of the elements are being modified, and <code>value</code> determines what the property is modified into.</p>
+        </article>
+        </section>
 
       <section class="main-section" id="Selectors">
         <header>
           <h2>Selectors</h2>
         </header>
-        <p>Using a selector, you can apply a property to multiple elements at once. Possible selectors are (in increasing priority):</p>
-        <ul>
-          <li>Element</li>
-          <li>Class</li>
-          <li>ID</li>
-        </ul>
+        <article class="content">
+          <p>Using a selector, you can apply a property to multiple elements at once. Possible selectors are (in increasing priority):</p>
+          <ul>
+            <li>Element</li>
+            <li>Class</li>
+            <li>ID</li>
+          </ul>
+        </article>
       </section>
 
       <section class="main-section" id="Color">
         <header>
           <h2>Color</h2>
         </header>
-        <p>The property that is responsible for the color of an element's text is the <code>color</code> style property.</p>
-        <p>Here's how you would set your <code>h2</code> element's text color to blue:</p>
-        <code>
-          <span>h2 {<br></span>
-          <span class="tab">color: blue;</span><br>
-          <span>}</span>
-        </code>
-      <p>Note that it is a good practice to end inline style declarations with a <code>;</code> .</p>
-      </section>
+        <article class="content">
+          <p>The property that is responsible for the color of an element's text is the <code>color</code> style property.</p>
+          <p>Here's how you would set your <code>h2</code> element's text color to blue:</p>
+          <code>
+            <span>h2 {<br></span>
+            <span class="tab">color: blue;</span><br>
+            <span>}</span>
+          </code>
+          <p>Note that it is a good practice to end inline style declarations with a <code>;</code> .</p>
+        </article>
+        </section>
 
       <section class="main-section" id="Fonts">
         <header>
           <h2>Fonts</h2>
         </header>
-        <p>You can set which font an element should use, by using the font-family property.</p>
-        <p>For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS:</p>
-        <code>
-          <span>h2 {<br></span>
-          <span class="tab">font-family: sans-serif;</span><br>
-          <span>}</span>
-        </code>
+        <article class="content">
+          <p>You can set which font an element should use, by using the font-family property.</p>
+          <p>For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS:</p>
+          <code>
+            <span>h2 {<br></span>
+            <span class="tab">font-family: sans-serif;</span><br>
+            <span>}</span>
+          </code>
+        </article>
       </section>
 
       <section class="main-section" id="Acknowledgements">
         <header>
           <h2>Acknowledgements</h2>
         </header>
-        <p>Paragraph content was taken from freecodecamp.com's HTML/CSS course</p>
-      </section>
+        <article class="content">
+          <p>Paragraph content was taken from freecodecamp.com's HTML/CSS course</p>
+        </article>
+        </section>
     </main>
   </body>
 </html>
